@@ -80,24 +80,63 @@ Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot th
 each case. Take a screenshot of your graph and put them here by modifying this file, committing, and pushing
 it to this repository.
 
-Insertion, search, and deletion running time (already sorted):
-
 ![Firefly picture of a cat 86147](https://github.com/user-attachments/assets/8b2d008e-3011-4979-97b8-fa2e9886a01a)
 
+![Screenshot 2024-12-05 at 8.33.29 AM.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F8x%2Fxr5zmqb90mj0pd77rvh___600000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Kq6BHh%2FScreenshot%202024-12-05%20at%208.33.29%20AM.png)
+
+Insertion, search, and deletion running time (already sorted):
+
+![Screenshot 2024-12-05 at 8.32.12 AM.png](..%2F..%2FDesktop%2FScreenshot%202024-12-05%20at%208.32.12%20AM.png)
 
 Insertion, search, and deletion running time (shuffled):
 
+![Screenshot 2024-12-05 at 8.33.09 AM.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F8x%2Fxr5zmqb90mj0pd77rvh___600000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_lGU4OM%2FScreenshot%202024-12-05%20at%208.33.09%20AM.png)
+
 Insertion, search, and deletion running time (reversed):
+
+![Screenshot 2024-12-05 at 8.32.52 AM.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F8x%2Fxr5zmqb90mj0pd77rvh___600000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_s2TaIU%2FScreenshot%202024-12-05%20at%208.32.52%20AM.png)
 
 ## 5. **Document your Dataset and Results**
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
 how it compares to the theoretical performance of the hash table operations.
 
-Dataset Source: // FINISH ME
+Dataset Source: Kaggle: https://www.kaggle.com/datasets/harios/box-office-data-1984-to-2024-from-boxofficemojo
 
-Dataset Modifications ("None" if unchanged): // FINISH ME
+Dataset Modifications ("None" if unchanged): None
 
-Result Analysis: // FINISH ME
+Result Analysis: 
+
+Insert Operation Analysis:
+
+Sorted Data: The insert time decreased as the size of the dataset increased. With 500 data entries, the insert time was approximately 0.00000792 seconds, while for 5000 entries, it dropped to 0.00000709 seconds. This decrease is likely due to amortized constant time performance since the hash table is efficient in handling ordered inputs without the need for a lot of rehashing.
+
+Reversed Data: The insert time was initially higher at 0.00001708 seconds for 500 entries, but decreased to 0.00000917 seconds for 5000 entries. The reversed order may have caused increased collisions early on, leading to longer insertion times. As the table filled and more buckets became available, performance improved.
+
+Shuffled Data: Overall showed a minor decrease. The values ranged from 0.00000833 seconds for 500 entries to 0.00000625 seconds for 5000 entries. The shuffled nature of the data may cause more collisions, but it appears the hash table handled these collisions well, showing solid performance.
+
+Conclusions: The insertions were generally fast across all datasets, with slight differences that can be attributed to the number of collisions encountered due to data ordering. The theoretical performance of hash table operations is O(1) for insertion, so I would say these results are as expected.
+
+
+Search Operation Analysis
+
+Sorted Data: The search time remained somewhat consistent with a slight decrease as the dataset increased. It started at 0.000001125 seconds for 500 entries and dropped to 0.000000709 seconds for 5000 entries. This is expected behavior, showing efficient look-up even for larger datasets.
+
+Reversed Data: Similar to the shuffled data, search times were consistent. Starting at 0.000000542 seconds for 500 entries and remaining close to this value for larger datasets. This reflects the hash table's efficiency, regardless of data order.
+
+Shuffled Data: The search time showed consistency across all sizes, averaging around 0.0000005 seconds. This suggests that the hash table's distribution of data was working well, resulting in a small difference between shuffled and sorted inputs.
+
+Conclusions: The search times were very consistent, reinforcing the O(1) performance characteristic of hash tables.
+
+
+Delete Operation Analysis
+
+Sorted Data: The delete operation times were pretty stable, but showed some fluctuations. It started at 0.00000833 seconds for 500 entries and decreased to 0.00000667 seconds for 5000 entries. The performance here is expected to be similar to insert operations due to the hash table needing to locate the element before removal.
+
+Reversed Data: The delete time remained consistent, starting at 0.00000666 seconds for 500 entries and slightly decreasing to 0.00000458 seconds for 5000 entries.
+
+Shuffled Data: The delete times were very consistent across the different sizes, averaging around 0.00000458 seconds. The uniform distribution of keys seems to help maintain similar deletion performance.
+
+Conclusions: The deletion times showed minimal fluctuation, similar to the insertion times, which is expected since deletion also involves searching for the key first.
 
 ## Submission:
 
