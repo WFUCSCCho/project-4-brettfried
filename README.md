@@ -82,19 +82,24 @@ it to this repository.
 
 ![Firefly picture of a cat 86147](https://github.com/user-attachments/assets/8b2d008e-3011-4979-97b8-fa2e9886a01a)
 
-![Screenshot 2024-12-05 at 8.33.29 AM.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F8x%2Fxr5zmqb90mj0pd77rvh___600000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_Kq6BHh%2FScreenshot%202024-12-05%20at%208.33.29%20AM.png)
+<img width="493" alt="Screenshot 2024-12-05 at 9 01 37 AM" src="https://github.com/user-attachments/assets/c8a0fd62-69ac-4999-935b-37de3a105cda">
+
 
 Insertion, search, and deletion running time (already sorted):
 
-![Screenshot 2024-12-05 at 8.32.12 AM.png](..%2F..%2FDesktop%2FScreenshot%202024-12-05%20at%208.32.12%20AM.png)
+<img width="575" alt="Screenshot 2024-12-05 at 9 02 03 AM" src="https://github.com/user-attachments/assets/40ee9704-1c0e-4ef2-88a1-7baafdefe64d">
+
 
 Insertion, search, and deletion running time (shuffled):
 
-![Screenshot 2024-12-05 at 8.33.09 AM.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F8x%2Fxr5zmqb90mj0pd77rvh___600000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_lGU4OM%2FScreenshot%202024-12-05%20at%208.33.09%20AM.png)
+<img width="576" alt="Screenshot 2024-12-05 at 9 02 20 AM" src="https://github.com/user-attachments/assets/12074fe3-ff00-4cea-a8d1-0f559b14acce">
+
 
 Insertion, search, and deletion running time (reversed):
 
-![Screenshot 2024-12-05 at 8.32.52 AM.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F8x%2Fxr5zmqb90mj0pd77rvh___600000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_s2TaIU%2FScreenshot%202024-12-05%20at%208.32.52%20AM.png)
+<img width="589" alt="Screenshot 2024-12-05 at 9 02 12 AM" src="https://github.com/user-attachments/assets/90a67cd8-9cf8-4194-a877-fd66b9704413">
+
+
 
 ## 5. **Document your Dataset and Results**
 Document the source of your dataset and any modifications you made to it. Describe the results of your analysis and 
